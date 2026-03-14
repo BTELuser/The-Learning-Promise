@@ -160,3 +160,48 @@ color:white;
 padding:15px;
 margin-top:40px;
 }
+#problem-hero {
+  background-image: url("images/education-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+}
+
+.problem-overlay {
+  background-color: rgba(0,0,0,0.65);
+  color: white;
+  padding: 60px;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.problem-overlay h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.problem-overlay h2 {
+  margin-top: 30px;
+}
+
+.problem-overlay p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.problem-overlay ul {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.problem-transition {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+}
