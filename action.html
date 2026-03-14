@@ -5,48 +5,92 @@
 <a href="solutions.html">Solutions</a>
 <a href="action.html">Take Action</a>
 </nav>
-<!DOCTYPE html>
-<html>
+<section id="take-action" style="padding: 60px 20px; font-family: Georgia, serif; background-color: #fff;">
+  <h1 style="text-align: center; font-size: 3rem; margin-bottom: 40px; color: #fff; background-color: #f39c12; padding: 20px; border-radius: 8px;">
+    Take Action for Education
+  </h1>
 
-<head>
-<title>Take Action</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <div style="max-width: 800px; margin: auto;">
 
-<body>
+    <h2>Ways You Can Help</h2>
 
-<header class="action-header">
-<h1>Take Action for Education</h1>
-</header>
+    <!-- Toggle 1 -->
+    <button class="toggle-btn">Spread awareness about global education inequality</button>
+    <div class="toggle-content">
+      <p>Share articles, social media posts, or organize discussions at school or community groups to educate others about the challenges children face globally.</p>
+    </div>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="problem.html">The Problem</a>
-<a href="solutions.html">Solutions</a>
-<a href="action.html">Take Action</a>
-</nav>
+    <!-- Toggle 2 -->
+    <button class="toggle-btn">Support charities that improve education</button>
+    <div class="toggle-content">
+      <p>Donate to organizations like UNICEF, Room to Read, or local education charities that provide schools, materials, and teacher training to underserved communities.</p>
+    </div>
 
-<section class="actions">
+    <!-- Toggle 3 -->
+    <button class="toggle-btn">Volunteer or tutor students</button>
+    <div class="toggle-content">
+      <p>Offer your time to tutor students locally or online, helping them improve literacy, numeracy, or other essential skills.</p>
+    </div>
 
-<h2>Ways You Can Help</h2>
+    <!-- Toggle 4 -->
+    <button class="toggle-btn">Donate books and learning materials</button>
+    <div class="toggle-content">
+      <p>Collect gently used books, stationery, or educational tools to send to schools and libraries in low-resource areas.</p>
+    </div>
 
-<ul>
-<li>Spread awareness about global education inequality.</li>
-<li>Support charities that improve education.</li>
-<li>Volunteer or tutor students.</li>
-<li>Donate books and learning materials.</li>
-<li>Promote equal access to education.</li>
-<li>Learn more about global education challenges.</li>
+    <!-- Toggle 5 -->
+    <button class="toggle-btn">Promote equal access to education</button>
+    <div class="toggle-content">
+      <p>Support initiatives and campaigns that aim to reduce gender and socioeconomic disparities in schooling, ensuring all children have equal opportunities.</p>
+    </div>
 
-</ul>
+    <!-- Toggle 6 -->
+    <button class="toggle-btn">Learn more about global education challenges</button>
+    <div class="toggle-content">
+      <p>Read reports, watch documentaries, and follow educational NGOs to stay informed about the state of global education and where you can help most effectively.</p>
+    </div>
+
+  </div>
+
+  <!-- Styles for toggles -->
+  <style>
+    .toggle-btn {
+      width: 100%;
+      background-color: #2980b9;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 6px;
+      text-align: left;
+      font-size: 1.1rem;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #3498db;
+    }
+
+    .toggle-content {
+      display: none;
+      padding: 15px;
+      margin-top: 5px;
+      background-color: #ecf0f1;
+      border-left: 4px solid #2980b9;
+      border-radius: 4px;
+    }
+  </style>
+
+  <!-- JavaScript for toggles -->
+  <script>
+    const toggles = document.querySelectorAll('.toggle-btn');
+    toggles.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        content.style.display = (content.style.display === "block") ? "none" : "block";
+      });
+    });
+  </script>
 
 </section>
-
-<footer>
-<p>Together we can support education for everyone.</p>
-</footer>
-
-</body>
-
-</html>
