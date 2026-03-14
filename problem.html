@@ -1,0 +1,178 @@
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="problem.html">The Problem</a>
+<a href="solutions.html">Solutions</a>
+<a href="action.html">Take Action</a>
+</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Problem: Global Education</title>
+<style>
+  /* Base Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f6;
+    color: #333;
+  }
+
+  h1 {
+    color: #1e3a8a; /* Blue */
+    font-size: 2.5em;
+  }
+
+  h2 {
+    margin-top: 40px;
+    color: #b91c1c; /* Red */
+    font-size: 1.8em;
+  }
+
+  /* Statistics Box */
+  .statistics {
+    background: #fff8e1; /* Gold-light */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .statistics li {
+    margin-bottom: 10px;
+  }
+
+  /* Toggle Buttons */
+  .toggle {
+    background-color: #e0e7ff; /* light blue */
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+
+  .toggle:hover {
+    background-color: #c7d2fe;
+  }
+
+  .toggle:after {
+    content: '\002B'; /* plus sign */
+    float: right;
+    font-weight: bold;
+  }
+
+  .toggle.active:after {
+    content: '\2212'; /* minus sign */
+  }
+
+  /* Toggle Content */
+  .toggle-content {
+    padding: 0 15px 15px 15px;
+    display: none;
+    background-color: #fff;
+    border-left: 4px solid #1e3a8a; /* Blue */
+    border-radius: 0 0 8px 8px;
+  }
+
+  /* Next Button */
+  .next-btn {
+    display: inline-block;
+    background-color: #1e3a8a; /* Blue */
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 40px;
+    transition: background 0.3s;
+  }
+
+  .next-btn:hover {
+    background-color: #3749c0;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    .next-btn { width: 100%; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<h1>The Problem: Global Education Crisis</h1>
+
+<div class="statistics">
+  <ul>
+    <li>~251 million children & youth are out of school worldwide (UNESCO)</li>
+    <li>In low-income countries, 33% of school-age children are out of school vs 3% in high-income countries (UNESCO)</li>
+    <li>Over 57% of children worldwide are in "learning poverty" — cannot read a simple text by age 10 (World Bank)</li>
+    <li>Education spending gap: $55/student in low-income countries vs $8,500/student in high-income countries (UNESCO)</li>
+    <li>Socio-economic inequality strongly affects PISA 2022 student performance (OECD)</li>
+  </ul>
+</div>
+
+<h2>Main Factors Affecting Education in LEDCs</h2>
+
+<button class="toggle">Poverty</button>
+<div class="toggle-content">
+  Children living in poverty often lack access to school or learning materials. Malnutrition and poor health also reduce their ability to attend or focus in school.
+</div>
+
+<button class="toggle">Funding</button>
+<div class="toggle-content">
+  Low government spending limits classrooms, teachers, and resources, making quality education difficult to provide.
+</div>
+
+<button class="toggle">Infrastructure</button>
+<div class="toggle-content">
+  Lack of safe buildings, electricity, clean water, and technology hampers teaching and learning, particularly in rural areas.
+</div>
+
+<button class="toggle">Teacher Quality</button>
+<div class="toggle-content">
+  Undertrained or underpaid teachers negatively affect instruction quality and students’ learning outcomes.
+</div>
+
+<button class="toggle">Health & Nutrition</button>
+<div class="toggle-content">
+  Malnutrition and diseases decrease school attendance and concentration, reducing the ability to learn.
+</div>
+
+<button class="toggle">Crisis & Conflict</button>
+<div class="toggle-content">
+  War, displacement, and instability force children out of school and disrupt education systems entirely.
+</div>
+
+<button class="toggle">Inequality</button>
+<div class="toggle-content">
+  Socio-economic disparities within countries mean poorer children often have worse learning opportunities, affecting literacy and numeracy outcomes.
+</div>
+
+<!-- Next Button -->
+<a href="solutions.html" class="next-btn">Next</a>
+
+<script>
+  const toggles = document.querySelectorAll('.toggle');
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      const content = toggle.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
